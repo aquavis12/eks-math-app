@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.display {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.buttons {
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #e9ecef;
+}
+
+.operator {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.equals {
+    background-color: #007bff;
+    color: white;
+}
+
+.clear {
+    background-color: #dc3545;
+    color: white;
+}
+
+.history {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.history h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+#history-list {
+    list-style-type: none;
+}
+
+#history-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .display input {
+        font-size: 20px;
+    }
+}
